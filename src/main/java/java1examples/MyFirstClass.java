@@ -2,8 +2,9 @@ package java1examples;
 
 public class MyFirstClass {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        for (int count = 1; count <= 100; count++)
+        int StartNumber = 1;
+        int EndNumber = 100;
+        for (int count = StartNumber; count <= EndNumber; count++)
         {
             boolean alreadyPrinted = false;
             if (count % 5 == 0)
@@ -16,7 +17,7 @@ public class MyFirstClass {
                 System.out.print("Quark");
                 alreadyPrinted = true;
             }
-            if (alreadyPrinted == false)
+            if (!alreadyPrinted)
             {
                 System.out.print(count);
             }
